@@ -18,7 +18,6 @@ def main():
 		prevsum = sum
 		i += 1
 
-	return count-1
+	print(count-1)
 
-#print(timeit.timeit('main()', number=5))
-print(main())
+print(timeit.timeit('main()', globals=locals(), number=1))
